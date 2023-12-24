@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Django Auth Tutorial{% endblock %}</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" integrity="sha384-eaQ8tHdLlECwxgZlXZLxxqYL0EMKcOXYL7AzjOaF+kD5ai3IK5tCPLzyBu3HZhjC" crossorigin="anonymous">
+
+  <!-- Bootstrap JavaScript (optional, for certain components) -->
+  <!-- Popper.js first, then Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oA9mBS+MAkk9HZ1fFEbF9PhcnFiUksYxNixl2CB3CiFE7fsF4a9MCIb9Hce34YL" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-eEi+MR5sT2LIsW5DQDAptxF4nO86P9oHgDNaAcP9ICoaAupev3KpYFwJXoRvWbhD" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
