@@ -11,4 +11,4 @@ class Sample(models.Model):
     collection = models.ForeignKey(Collection, on_delete=models.CASCADE)
     donor_count = models.IntegerField()
     material_type = models.CharField(max_length=255)
-    last_updated = models.DateField()
+    last_updated = models.DateTimeField(auto_now=True)
