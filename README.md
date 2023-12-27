@@ -35,8 +35,8 @@ The minimum viable product includes the following features:
 
 ## Project Structure
 
-- **/your_project_directory**: Root directory of the project.
-  - **/app**: Source code for the web application.
+- **/sample**: Root directory of the project.
+  - **/SampleApp**: Source code for the web application.
   - **/templates**: HTML templates.
   - **/static**: Static files (CSS, JavaScript).
   - **/venv**: Virtual environment for Python dependencies.
