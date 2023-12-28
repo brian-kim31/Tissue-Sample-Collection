@@ -4,12 +4,28 @@
 {% block title %}Create Collection{% endblock %}
 
 {% block content %}
-  <h2>Create a New Collection</h2>
-  <form method="post" action="{% url 'create_collection' %}">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Create Collection</button>
-  </form>
-  <br>
-  <a href="{% url 'home' %}">Back to Home</a>
+  <div class="container">
+    <h2 class="teal-text text-darken-2">Create a New Collection</h2>
+    <div class="row">
+      <form class="col s12" method="post" action="{% url 'create_collection' %}">
+        {% csrf_token %}
+        <div class="row">
+          <div class="input-field col s12">
+            {{ form.title.label_tag }}
+            {{ form.title }}
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            {{ form.disease_term.label_tag }}
+            {{ form.disease_term }}
+          </div>
+        </div>
+        <div class="row">
+          <button class="btn waves-effect waves-light" type="submit">Create Collection</button>
+          <a href="{% url 'home' %}" class="waves-effect waves-light btn-flat right">Back to Home</a>
+        </div>
+      </form>
+    </div>
+  </div>
 {% endblock %}

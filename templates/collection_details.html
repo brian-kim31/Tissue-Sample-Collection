@@ -20,6 +20,7 @@
                   <th>Donor Count</th>
                   <th>Material Type</th>
                   <th>Last Updated</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -29,6 +30,12 @@
                     <td>{{ sample.donor_count }}</td>
                     <td>{{ sample.material_type }}</td>
                     <td>{{ sample.last_updated }}</td>
+                    <td>
+                      <!-- Update button -->
+                      <a href="{% url 'update_sample' sample.id %}" class="waves-effect waves-light btn orange">Update</a>
+                      <!-- Delete button -->
+                      <a href="{% url 'sample_delete' sample.id %}" class="waves-effect waves-light btn red">Delete</a>
+                    </td>
                   </tr>
                 {% endfor %}
               </tbody>
@@ -53,8 +60,7 @@
                 <label for="material_type">Material Type</label>
               </div>
 
-              <button type="submit" class="btn waves-effect waves-light">Create Sample
-              </button>
+              <button type="submit" class="btn waves-effect waves-light">Create Sample</button>
             </form>
           </div>
         </div>
