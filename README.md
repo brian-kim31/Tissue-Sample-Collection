@@ -35,7 +35,7 @@ The minimum viable product includes the following features:
 
 ## Project Structure
 
-- **/sample**: Root directory of the project.
+- **/Tissue-Sample-Collection-master**: Root directory of the project.
   - **/SampleApp**: Source code for the web application.
   - **/templates**: HTML templates.
   - **/static**: Static files (CSS, JavaScript).
@@ -53,7 +53,7 @@ The minimum viable product includes the following features:
 
 
     # Navigate to the project directory
-    cd your_project_directory
+    cd Tissue-Sample-Collection-master/
 
     # Set up a virtual environment (optional but recommended)
     make venv
