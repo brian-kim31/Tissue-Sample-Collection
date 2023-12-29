@@ -18,6 +18,8 @@ from .models import Collection, Sample
 from .forms import SampleForm
 from django.http import HttpResponseRedirect
 from django.contrib import messages
+from django.utils import timezone
+from datetime import datetime
 
 class SignUpView(generic.CreateView):
     """
@@ -60,6 +62,8 @@ class ProfileView(View):
         return render(request, self.template_name)
 
 
+
+
 class CollectionListView(LoginRequiredMixin, ListView):
     """
     View for displaying a list of collections.
@@ -81,6 +85,22 @@ class CollectionListView(LoginRequiredMixin, ListView):
         """
         collections = Collection.objects.all()
         return collections
+
+    def get_context_data(self, **kwargs):
+        """
+        Get additional context data for the template.
+
+        Args:
+            **kwargs: Arbitrarily named arguments.
+
+        Returns:
+            dict: Additional context data.
+        """
+        context = super().get_context_data(**kwargs)
+        current_hour = timezone.localtime(timezone.now()).hour
+        context['current_hour'] = current_hour
+        return context
+
 
 
 class CollectionDetailView(DetailView):

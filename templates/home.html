@@ -16,15 +16,13 @@
               <div class="card-content">
                 <span class="card-title">
                   {% comment %} Greeting based on the time of day {% endcomment %}
-                  {% with current_hour=request|date:"G" %}
-                    {% if current_hour|add:0 >= 6 and current_hour|add:0 < 12 %}
-                      Good Morning,
-                    {% elif current_hour|add:0 >= 12 and current_hour|add:0 < 18 %}
-                      Good Afternoon,
-                    {% else %}
-                      Good Evening,
-                    {% endif %}
-                  {% endwith %}
+                  {% if current_hour < 12 %}
+                    Good Morning,
+                  {% elif current_hour < 18 %}
+                    Good Afternoon,
+                  {% else %}
+                    Good Evening,
+                  {% endif %}
                   {{ user.username }}!
                 </span>
                 <p>Welcome Back!.</p>

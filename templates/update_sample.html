@@ -10,5 +10,7 @@
       <button type="submit" class="btn btn-primary">Update Sample</button>
     </form>
     <a href="{% url 'collection_details' pk=form.instance.collection.id %}" class="btn btn-secondary my-2">Cancel</a>
+    <a href="{% url 'home' %}" class="waves-effect waves-light btn-flat right">Back to Home</a>
   </div>
+  
 {% endblock %}

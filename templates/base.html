@@ -94,16 +94,30 @@
     document.getElementById('navbarToggleBtn').addEventListener('click', function () {
       document.getElementById('navbarNav').classList.toggle('show');
     });
-
-    // Dark/Light Mode Toggle
-    const darkModeToggleBtn = document.getElementById('darkModeToggleBtn');
-    const body = document.body;
-
-    darkModeToggleBtn.addEventListener('click', function () {
-      body.classList.toggle('dark-mode');
-    });
     
   </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all input fields with the class 'validate'
+    const inputFields = document.querySelectorAll('.validate');
+
+    // Loop through each input field and add an event listener
+    inputFields.forEach(function(inputField) {
+      inputField.addEventListener('input', function() {
+        // Check if the input field has a value
+        if (inputField.value.length > 0) {
+          // If it has a value, add a class to the label to move it up
+          inputField.nextElementSibling.classList.add('active');
+        } else {
+          // If it doesn't have a value, remove the class to move the label down
+          inputField.nextElementSibling.classList.remove('active');
+        }
+      });
+    });
+  });
+</script>
+
 
 </body>
 

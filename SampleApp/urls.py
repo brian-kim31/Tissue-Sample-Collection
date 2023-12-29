@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import *
+from .views import SignUpView, ProfileView, CollectionListView, CollectionDetailView, SampleCreateView, CollectionCreateView,CollectionDeleteView, SampleDeleteView, CollectionUpdateView, SampleUpdateView
 
 urlpatterns = [
     path('dashboard/', CollectionListView.as_view(), name='home'),
