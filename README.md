@@ -48,12 +48,12 @@ The minimum viable product includes the following features:
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone git@github.com:brayokenya/Tissue-Sample-Collection.git
 
 
     # Navigate to the project directory
-    cd Tissue-Sample-Collection-master/
+    cd Tissue-Sample-Collection/
 
     # Set up a virtual environment (optional but recommended)
     make venv
@@ -71,5 +71,8 @@ The minimum viable product includes the following features:
     make run
 
    
+## Hosted Version
 
+```
+  https://brian2541.pythonanywhere.com/
 
