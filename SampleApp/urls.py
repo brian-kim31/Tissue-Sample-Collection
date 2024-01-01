@@ -2,7 +2,7 @@ from django.urls import path
 from .views import SignUpView, ProfileView, CollectionListView, CollectionDetailView, SampleCreateView, CollectionCreateView,CollectionDeleteView, SampleDeleteView, CollectionUpdateView, SampleUpdateView
 
 urlpatterns = [
-    path('dashboard/', CollectionListView.as_view(), name='home'),
+    path('', CollectionListView.as_view(), name='home'),
     path("signup/", SignUpView.as_view(), name="signup"),
     path('profile/', ProfileView.as_view(), name='profile'),
     path('collection/<int:pk>/', CollectionDetailView.as_view(), name='collection_details'),
