@@ -49,7 +49,7 @@ The minimum viable product includes the following features:
 1. Clone the repository:
 
    ```
-   git clone git@github.com:brayokenya/Tissue-Sample-Collection.git
+   git clone https://github.com/brayokenya/Tissue-Sample-Collection.git
 
 
     # Navigate to the project directory
