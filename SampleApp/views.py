@@ -21,6 +21,15 @@ from django.contrib import messages
 from django.utils import timezone
 from datetime import datetime
 
+
+class IndexView(View):
+    
+    template_name = 'index.html'
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)
+    
+    
 class SignUpView(generic.CreateView):
     """
     View for user registration.
