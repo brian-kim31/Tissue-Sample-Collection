@@ -55,10 +55,6 @@ class TestCollectionCreateView:
         assert not Collection.objects.filter(user=user).exists()  # No collection should be created
 
 
-        # # Check if error message is added
-        # storage = get_messages(request)
-        # assert any('There was an error creating the collection.' in message.message for message in storage)
-
 
 class TestSampleCreateView:
 
@@ -103,7 +99,3 @@ class TestSampleCreateView:
 
         assert response.status_code == 200  # Form submission failed, should return to the same page
         assert not collection.sample_set.filter(user=user).exists()  # No sample should be created
-
-        # Check if error message is added
-        # storage = get_messages(request)
-        # assert any('There was an error creating the sample.' in message.message for message in storage)
