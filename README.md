@@ -82,3 +82,13 @@ The minimum viable product includes the following features:
 ```
   https://brian2541.pythonanywhere.com/
 
+```
+## Future Plans
+
+
+1. Ensure Collections and samples can only be deleted by their sole creators(Users that created the collections)
+
+2. Dockerize the Application for easier Deployment
+
+3. Use it as a learning tool to improve and maintain the current existing system at 
+https://www.nottingham.ac.uk/
