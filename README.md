@@ -70,6 +70,12 @@ The minimum viable product includes the following features:
     # Run the development server
     make run
 
+    #Running Tests
+
+    cd SampleApp/
+
+    pytest -s tests.py
+
    
 ## Hosted Version
 
