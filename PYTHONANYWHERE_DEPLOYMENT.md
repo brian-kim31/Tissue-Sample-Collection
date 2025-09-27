@@ -9,11 +9,11 @@
 1. **Upload files via PythonAnywhere's file browser:**
    - Go to your PythonAnywhere dashboard
    - Navigate to the "Files" tab
-   - Upload your project files to `/home/yourusername/mysite/` (replace `yourusername` with your actual username)
+   - Upload your project files to `/home/kim34/mysite/`
 
 2. **Or use git clone (recommended):**
    ```bash
-   cd /home/yourusername/mysite/
+   cd /home/kim34/mysite/
    git clone https://github.com/brayokenya/Tissue-Sample-Collection.git .
    ```
 
@@ -21,7 +21,7 @@
 
 1. **Create virtual environment:**
    ```bash
-   cd /home/yourusername/mysite/
+   cd /home/kim34/mysite/
    python3.10 -m venv venv
    source venv/bin/activate
    ```
@@ -35,7 +35,7 @@
 ## Step 3: Configure Settings
 
 1. **Update settings_pa.py:**
-   - Replace `yourusername` with your actual PythonAnywhere username
+   - Your username is already configured as `kim34`
    - Replace `your-secret-key-here` with a secure secret key
    - Update domain in `ALLOWED_HOSTS`
 
@@ -51,7 +51,7 @@
 
 1. **Run migrations:**
    ```bash
-   cd /home/yourusername/mysite/
+   cd /home/kim34/mysite/
    source venv/bin/activate
    python manage.py migrate --settings=core.settings_pa
    ```
@@ -83,7 +83,7 @@
    import sys
 
    # Add your project directory to the Python path
-   path = '/home/yourusername/mysite'
+   path = '/home/kim34/mysite'
    if path not in sys.path:
        sys.path.append(path)
 
@@ -98,11 +98,11 @@
 4. **Configure static files mapping:**
    - In the "Static files" section:
    - URL: `/static/`
-   - Directory: `/home/yourusername/mysite/staticfiles`
+   - Directory: `/home/kim34/mysite/staticfiles`
 
 5. **Configure media files mapping (if needed):**
    - URL: `/media/`
-   - Directory: `/home/yourusername/mysite/media`
+   - Directory: `/home/kim34/mysite/media`
 
 ## Step 6: Security Settings
 
@@ -126,7 +126,7 @@
 
 ## Step 8: Test Your Application
 
-1. **Visit your site:** `https://yourusername.pythonanywhere.com/`
+1. **Visit your site:** `https://kim34.pythonanywhere.com/`
 
 2. **Test functionality:**
    - Create a superuser account

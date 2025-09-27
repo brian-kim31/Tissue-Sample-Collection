@@ -10,8 +10,8 @@ DEBUG = False
 
 # PythonAnywhere specific settings
 ALLOWED_HOSTS = [
-    "yourusername.pythonanywhere.com",  # Replace with your actual PythonAnywhere domain
-    "www.yourusername.pythonanywhere.com",
+    "kim34.pythonanywhere.com",
+    "www.kim34.pythonanywhere.com",
 ]
 
 # Database - Use SQLite for PythonAnywhere
@@ -24,11 +24,11 @@ DATABASES = {
 
 # Static files configuration for PythonAnywhere
 STATIC_URL = "/static/"
-STATIC_ROOT = "/home/yourusername/mysite/staticfiles"  # Replace with your actual path
+STATIC_ROOT = "/home/kim34/mysite/staticfiles"
 
 # Media files configuration
 MEDIA_URL = "/media/"
-MEDIA_ROOT = "/home/yourusername/mysite/media"  # Replace with your actual path
+MEDIA_ROOT = "/home/kim34/mysite/media"
 
 # Security settings for production
 SECURE_BROWSER_XSS_FILTER = True
