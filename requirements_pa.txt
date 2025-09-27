@@ -1,0 +1,22 @@
+# PythonAnywhere requirements - optimized for their environment
+asgiref==3.7.2
+beautifulsoup4==4.12.2
+Django==4.2
+django-admin-interface==0.26.0
+django-bootstrap-v5==1.0.11
+django-colorfield==0.11.0
+django-crispy-forms==2.1
+Pillow==10.1.0
+python-dateutil==2.8.2
+python-slugify==8.0.1
+six==1.16.0
+sqlparse==0.4.4
+text-unidecode==1.3
+whitenoise==6.6.0
+
+# Development/testing packages (optional for production)
+# Faker==12.0.1
+# mixer==7.2.2
+# pytest==7.4.4
+# pytest-django==4.7.0
+# black==23.12.1
